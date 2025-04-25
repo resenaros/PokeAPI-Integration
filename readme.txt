@@ -7,9 +7,9 @@ Custom CSS: A custom CSS file was created to style Pokémon types and other elem
 
 Bootstrap: Bootstrap was used to enhance the layout and responsiveness.
 
-JavaScript: JavaScript was used to fetch data from the PokeAPI. The script retrieved Pokémon names, IDs, types, and images, and inject the data into the DOM to display this information.
+JavaScript: JavaScript was employed to retrieve data from the PokeAPI. The script fetched Pokémon names, IDs, types, images, and injecting this data into the Document Object Model (DOM) for display.
 
-Comments placed to interpret code and cleaned up code to remove unused code/classes/ids/attributes
+Additionally, comments were added to clarify the code, and the code was refined by removing unused classes, IDs, attributes, and redundant sections.
 
 Requirements Completed:
 
