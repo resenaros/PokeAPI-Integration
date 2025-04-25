@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pokedex</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+
+  <body class="bg-dark">
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar container-fluid bg-dark border border-2 border-primary mw-100"
+      >
+        <div
+          class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between"
+        >
+          <!-- Left Side: Images pokemon:rotom #479 and Pokedex logo icon -->
+          <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-center"
+          >
+            <img
+              class="image-fluid p-2"
+              src="images/rotom.png"
+              alt="First Pokémon"
+              id="rotom"
+            />
+            <img
+              class="image-fluid p-2"
+              src="images/pokedex-logo.png"
+              alt="Pokédex Logo"
+              id="logo"
+            />
+          </div>
+
+          <!-- Right Side: Search Form -->
+          <form class="d-flex flex-md-row gap-2 align-items-start p-2">
+            <!-- id="pokemonInput" used in JS -->
+            <input
+              id="pokemonInput"
+              class="form-control w-auto"
+              type="search"
+              placeholder="Enter Pokémon"
+              aria-label="Search"
+            />
+            <!-- id:searchBtn used in JS -->
+            <button
+              class="btn btn-outline-warning btn-primary border border-2 border-seconday w-auto"
+              id="searchBtn"
+              type="button"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main class="p-1 mw-50">
+      <div class="container-fluid w-50">
+        <!-- id used in JS -->
+        <div id="pokemonList">
+          <!-- Default Template for content added to JS. This will show as the default webpage. -->
+          <div
+            class="position-relative text-uppercase bg-secondary text-warning border border-2 border-primary rounded-3 overflow-hidden"
+            style="isolation: isolate"
+          >
+            <p
+              class="start-50 translate-middle-x position-absolute text-dark opacity-50"
+              style="font-size: 8rem; z-index: -1"
+            >
+              #004
+            </p>
+            <div>
+              <img
+                class="w-50 mx-auto d-block"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+                alt="charmander"
+                srcset=""
+              />
+            </div>
+            <div>
+              <div
+                class="numberContainer text-dark d-flex flex-wrap justify-content-center gap-2"
+              >
+                <p class="pokemonID">#004</p>
+                <h2 class="fs-3">Charmander</h2>
+              </div>
+              <div
+                class="d-flex flex-wrap justify-content-center gap-2"
+                style="font-size: 12px"
+              >
+                <p class="fire text-center rounded px-3 py-1">Fire</p>
+                <p class="dragon text-center rounded px-3 py-1">Dragon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- place footer here -->
+      <div class="container text-white">
+        <p class="mb-1 d-flex justify-content-center">
+          Pokémon data provided by
+          <a href="https://pokeapi.co" class="text-info ms-1" target="_blank"
+            >PokeAPI</a
+          >
+        </p>
+        <p class="mb-0 small d-flex justify-content-center">
+          &copy; 2025 PokeAPI Integration. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
